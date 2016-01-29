@@ -1,0 +1,40 @@
+<html>
+<body id="body1">
+tekst tijela
+<head>
+
+<style>
+#div1{
+height:100px;
+width: 200px;
+background-color:blue;
+  font-size: 24px;
+ 
+}
+
+</style>
+
+<script>
+var stupanj = 2;
+function animation(){
+var elem = document.getElementById("img1");
+
+elem.style.transform = "rotate("+stupanj+"deg)";
+stupanj++;
+setTimeout('animation()', 20);
+
+}
+
+</script>
+
+</head>
+<div id="div1" >
+Tekst razno razno
+</div>
+<img id="img1" src="slika.png"></img>
+<!-- ovaj script tag mora biti nakon slike, inače se slika ne vrti-->
+ <script>
+animation();
+</script>
+</body>
+</html>

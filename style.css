@@ -1,7 +1,5 @@
 body{
 	font-family: sans-serif;
-	background: #000000;
-	color: white;
 	margin: 0;
 }
 header{
@@ -11,6 +9,7 @@ header{
 	padding: 40px 0;
 	text-align: center;
 	position: fixed;
+
 }
 section{
 	text-align: justify;
@@ -22,4 +21,23 @@ section{
 }
 div{
 	padding: 50px;
+	position: static;
+	top: 10px;
 }
+li{
+	list-style: none;
+	display: inline-block;
+	padding: 25px;
+	//float: right;
+}
+ul{
+	float: right;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	color: yellow;
+	text-decoration: underline;
+};

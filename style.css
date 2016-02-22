@@ -41,7 +41,7 @@ a:hover{
 	color: yellow;
 	text-decoration: underline;
 }
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1000px) {
     body {
         background-color: blue;
     }

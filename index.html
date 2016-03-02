@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<style>
+body, html{
+padding: 0;
+margin: 0;
+width: 100%;
+
+}
+.div1{
+box-sizing: border-box;
+border: 1px solid black;
+font-family: sans-serif;
+display: table;
+float: left;
+width: 90%;
+margin: 5%;
+padding: 20% 5%;
+text-align: center;
+text-decoration: none;
+color: black;
+font-size: 1.5em;
+font-weight: bold;
+/*box-shadow: 3px 3px 5px #888888;*/
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a:hover{
+background-color: black;
+color: white;
+}
+
+
+@media screen and (min-width: 468px){
+	.div1{
+		width: 42%;
+		margin: 4%;
+	}
+	.container
+	{
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+@media screen and (min-width: 960px){
+	.div1{
+		width:29.33%;
+		margin: 2%;
+	}
+	.container{
+		width: 70%;
+		/*max-width: 800px;*/
+		margin: 0 auto;
+	}
+}
+
+
+</style>
+<!--[if lt IE 9]>
+<script src="http://github.com/aFarkas/html5shiv/blob/master/src/html5shiv.js"></script>
+
+<![endif]-->
+
+<body>
+
+
+<div class="container">
+		<ul>
+				<li><a class="div1" href="#">Home</a></li>
+				<li><a class="div1" href="#">Products</a></li>
+				<li><a class="div1" href="#">Else</a></li>
+				<li><a class="div1" href="#">All other stuff</a></li>
+				
+		</ul>	
+</div>
+</body>
+</html>

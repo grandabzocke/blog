@@ -10,11 +10,13 @@ padding: 0;
 margin: 0;
 width: 100%;
 height: 100%;
+background-color: #21180D;
+font-family: sans-serif;
 }
 .link{
 box-sizing: border-box;
-border: 3px solid black;
-font-family: sans-serif;
+border: 3px solid #F9F8CC;
+
 /*display: table;*/
 float: left;
 width: 90%;
@@ -23,10 +25,12 @@ height: 150px;
 padding: 10px;
 text-align: center;
 text-decoration: none;
-color: black;
+color: #F9F8CC;
 font-size: 1.5em;
 font-weight: bold;
-box-shadow: 3px 3px 5px #888888;
+/*box-shadow: 3px 3px 5px #888888;*/
+
+
 
 display: flex;
 justify-content: center;
@@ -50,14 +54,43 @@ ul{
 	list-style: none;
 }
 
-
-a:hover{
-background-color: black;
-color: white;
+a{
+	transition: background-color 500ms ease;
 }
 
 
+a:hover{
+background-color: #F9F8CC;
+color: #21180D;
+transition: background-color 200ms ease;
+}
 
+header{
+	height: 150px;
+	background-size: cover;
+	background-image: url('beard2.png');
+	font-size: 1.5em;
+	color: #F9F8CC;
+	display: flex;
+	align-items: center;
+}
+#headerText{
+	margin-left: 20px;
+	text-shadow: 0px 0px 3px black, 0px 0px 3px black,0px 0px 3px black,0px 0px 3px black,0px 0px 3px black,0px 0px 3px black,0px 0px 3px black,0px 0px 3px black,0px 0px 3px black;
+
+}
+
+
+footer{
+	height: 50px;
+	width: 100%;	
+	clear:both;	
+	background-color: #F9F8CC;
+	color: #21180D;	
+	text-align: center;
+	line-height: 50px;
+	font-weight: bold;
+}
 
 @media screen and (min-width: 480px){
 	.link{
@@ -68,6 +101,9 @@ color: white;
 	{
 		width: 80%;
 		margin: 0 auto;
+	}
+	header{
+		height: 200px;
 	}
 }
 @media screen and (min-width: 960px){
@@ -83,6 +119,7 @@ color: white;
 }
 
 
+
 </style>
 <!--[if lt IE 9]>
 <script src="http://github.com/aFarkas/html5shiv/blob/master/src/html5shiv.js"></script>
@@ -93,16 +130,23 @@ color: white;
 <![endif]-->
 
 <body>
-
+<header>
+	<div id="headerText">The last thing that makes us men</div>
+</header>
 
 <div class="container">
 		<ul>
-				<li><a class="link" href="#">Home</a></li>
-				<li><a class="link" href="#">Products</a></li>
-				<li><a class="link" href="#">Else</a></li>
-				<li><a class="link" href="#">All other stuff and a lot of stuff</a></li>
+				<li><a class="link" href="are-beards-attractive">Are beards attractive?</a></li>
+				<li><a class="link" href="what-is-beard-oil">What is beard oil?</a></li>
+				<li><a class="link" href="should-i-grow-a-beard">Should I grow a beard?</a></li>
+				<li><a class="link" href="should-i-shave-my-beard">Should I shave my beard?</a></li>
+				
 				
 		</ul>	
 </div>
+
+<footer>
+Beardfan.com
+</footer>
 </body>
 </html>
